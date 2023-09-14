@@ -1,0 +1,7 @@
+{
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./",
+  "promptDelete": true,
+  "newFileLocation": "current"
+}
