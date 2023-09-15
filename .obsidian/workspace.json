@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "023494de5e51f648",
+        "id": "8012cf2851c2c833",
         "type": "tabs",
         "children": [
           {
-            "id": "c9862fc4b183b900",
+            "id": "ad000d10e94f41a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Проектирование ИС/Теория и задание к лабораторной работе 1.md",
+                "file": "Проектирование ИС/Концептуальное описание.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "aad5683b1bd2477f",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Проектирование ИС/Теория и задание к лабораторной работе 1.md",
+                "file": "Проектирование ИС/Концептуальное описание.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Проектирование ИС/Теория и задание к лабораторной работе 1.md",
+                "file": "Проектирование ИС/Концептуальное описание.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Проектирование ИС/Теория и задание к лабораторной работе 1.md"
+                "file": "Проектирование ИС/Концептуальное описание.md"
               }
             }
           },
@@ -159,10 +158,48 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c9862fc4b183b900",
+  "floating": {
+    "id": "329437aaa6780df9",
+    "type": "floating",
+    "children": [
+      {
+        "id": "ae9bd1464431bdc8",
+        "type": "window",
+        "children": [
+          {
+            "id": "354f08b4dfb8ebb6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ac9de4f4adce7f77",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Проектирование ИС/Теория и задание к лабораторной работе 1.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 3367,
+        "y": 483,
+        "width": 600,
+        "height": 600,
+        "maximize": false,
+        "zoom": 3
+      }
+    ]
+  },
+  "active": "ad000d10e94f41a6",
   "lastOpenFiles": [
-    "Проектирование ИС/Проектирование ИС.md",
     "Проектирование ИС/Теория и задание к лабораторной работе 1.md",
+    "Проектирование ИС/Концептуальное описание.md",
+    "Проектирование ИС/Проектирование ИС.md",
     "Проектирование ИС/Описание взаимодействия со сторонними системами.md",
     "Проектирование ИС/Описание взаимодействия с пользователями.md",
     "Проектирование ИС/Словесное описание организации.md",
