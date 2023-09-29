@@ -26,22 +26,17 @@ def check_mersens_number(num):
         return False
     S = 4
     i = 1
-    
     if isprime(int(p)):
-       
         while i != p-1:
             S = (S**2 - 2) % number
-            i =i + 1
+            i = i + 1
         if S == 0:
-            
             return True
         else:
-            
             return False
     else:
         return False
-    
-    
+
 class TestCheckMersensNumber(unittest.TestCase):
     def setUp(self):
         self.chmn = check_mersens_number
