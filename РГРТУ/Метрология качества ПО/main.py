@@ -15,7 +15,7 @@ def isprime(n):
 # к целочисленному типу, в случае если привести значение
 # к целому типу не возможно, функция завершает свою работу
 
-def check_mersens_number(num):
+def check_mersens_number(num: int) -> bool:
     try:
         number = int(num)
     except ValueError:
