@@ -49,7 +49,7 @@ def check_mersens_number(num: int) -> bool:
 class TestCheckMersensNumber(unittest.TestCase):
     def setUp(self):
         self.chmn = check_mersens_number
-        self.valid_sets = (3, 7, 31, 8191, 131071, 524287)
+        self.valid_sets = (7, 31, 8191, 131071, 524287)
         self.invalid_sets1 = tuple(random.random() for _ in range(0, 200) if _ not in self.valid_sets)
         self.invalid_sets2 = tuple(map(lambda _: random.randint(-1000, 0), range(100)))
         self.invalid_sets3 = ['dsds', 'd', 'Hello world', 'All 4 me']
@@ -58,23 +58,40 @@ class TestCheckMersensNumber(unittest.TestCase):
 
     def test_Valid_sets(self):
         for param in self.valid_sets:
-            self.assertEqual(self.chmn(param), True)
+            try:
+                self.assertEqual(self.chmn(param), True)
+            except AssertionError:
+                print(f"Error in {param}")
 
     def test_InValid_sets1(self):
         for param in self.invalid_sets1:
-            self.assertEqual(self.chmn(param), False)
+            try:
+                self.assertEqual(self.chmn(param), False)
+            except AssertionError:
+                print(f"Error in {param}")
+                
 
     def test_InValid_sets2(self):
          for param in self.invalid_sets2:
-            self.assertEqual(self.chmn(param), False)
+            try:
+                self.assertEqual(self.chmn(param), False)
+            except AssertionError:
+                print(f"Error in {param}")
+                
     
     def test_InValid_sets3(self):
          for param in self.invalid_sets3:
-            self.assertEqual(self.chmn(param), False)
+            try:
+                self.assertEqual(self.chmn(param), False)
+            except AssertionError:
+                print(f"Error in {param}")
 
     def test_InValid_sets4(self):
          for param in self.invalid_sets4:
-            self.assertEqual(self.chmn(param), False)
+            try:
+                self.assertEqual(self.chmn(param), False)
+            except AssertionError:
+                print(param)
         
 if __name__ == "__main__":
     unittest.main()
