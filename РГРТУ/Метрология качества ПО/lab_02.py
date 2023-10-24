@@ -21,14 +21,13 @@ def is_prime(n: int) -> bool:
 def check_mersens_number(num: int) -> bool:
     try:
         number = abs(int(num))
-        if number == 0: return False
+        if number == 0: 
+            return False
     except ValueError:
-        # print("Переданное значение не является целым числом")
         return 0
     
-    p = math.log2(number +1)
+    p = math.log2(number + 1)
     if p % 1 != 0:
-        # print(f'{number} не является числом "Мерсена"')
         return False
     S = 4
     i = 1
@@ -61,14 +60,14 @@ class TestCheckMersensNumber(unittest.TestCase):
             try:
                 self.assertEqual(self.chmn(param), True)
             except AssertionError:
-                print(f"Error in {param}")
+                print(f"Error in valid_sets {param}")
 
     def test_InValid_sets1(self):
         for param in self.invalid_sets1:
             try:
                 self.assertEqual(self.chmn(param), False)
             except AssertionError:
-                print(f"Error in {param}")
+                print(f"Error in invalid_sets1 {param}")
                 
 
     def test_InValid_sets2(self):
@@ -76,7 +75,7 @@ class TestCheckMersensNumber(unittest.TestCase):
             try:
                 self.assertEqual(self.chmn(param), False)
             except AssertionError:
-                print(f"Error in {param}")
+                print(f"Error in invalid_sets2 {param}")
                 
     
     def test_InValid_sets3(self):
@@ -84,14 +83,14 @@ class TestCheckMersensNumber(unittest.TestCase):
             try:
                 self.assertEqual(self.chmn(param), False)
             except AssertionError:
-                print(f"Error in {param}")
+                print(f"Error in invalid_sets3 {param}")
 
     def test_InValid_sets4(self):
          for param in self.invalid_sets4:
             try:
                 self.assertEqual(self.chmn(param), False)
             except AssertionError:
-                print(param)
+                print(f"Error in invalid_sets4 {param}")
         
 if __name__ == "__main__":
     unittest.main()
