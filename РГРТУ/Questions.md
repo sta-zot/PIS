@@ -413,9 +413,7 @@ State3 --(event3)--> State1
 
 ##### Уравнение
 
-$
-\frac{dN}{dt} = rN
-$
+$\frac{dN}{dt} = rN$
 
 где:
 
