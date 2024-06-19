@@ -1138,10 +1138,10 @@ $$
 graph TD;
   stock[Уровень запасов] -->|Продажи| outflow[Продажи];
   inflow[Заказы] --> stock;
-  sales_rate[(Скорость продаж)] --> outflow;
-  order_rate[(Скорость заказов)] --> inflow;
+  sales_rate(Скорость продаж) --> outflow;
+  order_rate(Скорость заказов) --> inflow;
   stock -->|Запасы влияют на| order_rate;
-  time_delay[(Время доставки)] --> inflow;
+  time_delay(Время доставки) --> inflow;
   sales_rate -->|Зависит от| stock;
 ```
 
